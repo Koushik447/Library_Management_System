@@ -1,10 +1,27 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+
 * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: 'Segoe UI';
-  }
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --parple: rgb(81, 46, 46);
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  
+}
   .nav {
     width: 100%;
     background-color: rgb(81, 46, 46);
@@ -109,276 +126,34 @@
         background-color: #efefef;
     }
   }
-
-  .wecomesection {
-    position: relative;
-    text-align: center;
-}
-
-.wecomesection img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.welcome-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 54px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-}
-@media (max-width: 480px) 
-{
-    .wecomesection img {
-        display: none;
-    }
-    .welcome-text{
-        position: relative;
-    margin-top: 81px;
-    font-size: 54px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    }
-}
-
-.all_books > .depertment > .english {
-  .content-section {
-    padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .content-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  .content-row a{
-    text-decoration: none;
-    color: #333;
-  }
-  .content-item {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .content-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  .content-item img:hover{
-    scale: 1.05;
-  }
-  
-  .content-title {
-    font-size: 18px;
-    padding-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .content-description {
-    font-size: 14px;
-    color: #666;
-  }
-  .content-item button{
-    border: 1px solid black;
-    border-radius: 2px;
+.card_wrapper{
+    height: 700px;
+    width: 800px;
+    background-color: #efefef;
+    box-shadow: 10px;
     padding: 5px;
-  }
-  .content-item button:hover{
-    background-color: #ff3666;
-    color: #f6f5f7;
-  }
-
+    margin: 10px;
+    margin-left: 25%;
 }
-.all_books > .depertment > .biology{
-  .content-section {
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .content-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  .content-row a{
-    text-decoration: none;
-    color: #333;
-  }
-  .content-item {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .content-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  .content-item img:hover{
-    scale: 1.05;
-  }
-  
-  .content-title {
-    font-size: 18px;
-    padding-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .content-description {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .content-item button{
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .content-item button:hover{
-    background-color: #ff3666;
-    color: #f6f5f7;
-  }
-  
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f5f5f5;
 }
-
-.all_books > .depertment > .chemistry{
-  .content-section {
-    padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .content-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  .content-row a{
-    text-decoration: none;
-    color: #333;
-  }
-  .content-item {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .content-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  .content-item img:hover{
-    scale: 1.05;
-  }
-  
-  .content-title {
-    font-size: 18px;
-    padding-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .content-description {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .content-item button{
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .content-item button:hover{
-    background-color: #ff3666;
-    color: #f6f5f7;
-  }
+.card_wrapper .hedding{
+    font-size: 30px;
+    margin-left: 30%;
 }
-.all_books > .depertment > .physics{
-  .content-section {
-    padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .content-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  .content-row a{
-    text-decoration: none;
-    color: #333;
-  }
-  .content-item {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .content-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  .content-item img:hover{
-    scale: 1.05;
-  }
-  
-  .content-title {
-    font-size: 18px;
-    padding-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .content-description {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .content-item button{
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .content-item button:hover{
-    background-color: #ff3666;
-    color: #f6f5f7;
-  }
+.form-container button{
+    margin-left: 50%;
+    background-color: #efefef;
+    color: #222;
 }
 
 
-
-/* footer */
 a,
 a:hover,
 a:focus,
@@ -412,6 +187,7 @@ section {
 background: rgb(81, 46, 46);
 padding-top: 80px;
 padding-bottom: 40px;
+/* margin-top:78px ; */
 }
 
 @media only screen and (max-width:768px) { 
