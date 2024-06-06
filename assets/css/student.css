@@ -144,8 +144,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     }
 }
+.all_books > .all_book_container{
+  padding-left: 10px;
+}
 
-.all_books > .depertment > .english {
+.all_books > .all_book_container > .depertment > .english {
   .content-section {
     padding: 20px;
   }
@@ -202,7 +205,7 @@
   }
 
 }
-.all_books > .depertment > .biology{
+.all_books > .all_book_container > .depertment > .biology{
   .content-section {
     padding: 20px;
   }
@@ -261,7 +264,7 @@
   
 }
 
-.all_books > .depertment > .chemistry{
+.all_books > .all_book_container > .depertment > .chemistry{
   .content-section {
     padding: 20px;
   }
@@ -318,7 +321,7 @@
     color: #f6f5f7;
   }
 }
-.all_books > .depertment > .physics{
+.all_books > .all_book_container > .depertment > .physics{
   .content-section {
     padding: 20px;
   }
